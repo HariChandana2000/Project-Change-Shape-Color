@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(234, 244, 244);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: fit-content;
+  padding: 80px 20px;
+  gap: 2rem;
+  box-shadow: 0px 0px 51px -5px rgba(77, 77, 77, 1);
+  border-radius: 10px;
+}
+
+.container .shape-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+.container .buttons {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .buttons #change-color,
+.container .buttons #change-shape {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.container .buttons #change-color:hover,
+.container .buttons #change-shape:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.container .choose-colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 51px -5px rgba(77, 77, 77, 1);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container .choose-colors input {
+  cursor: pointer;
+}
+
+#square {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+}
+
+#diamond {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#triangle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#circle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#rectangle {
+  width: 90px;
+  height: 65px;
+  background-color: white;
+}
